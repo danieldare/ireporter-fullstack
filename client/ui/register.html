@@ -1,0 +1,102 @@
+<!Doctype html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign Up Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/css/register-style.css"
+    />
+    
+    <link rel="stylesheet" href="assets/css/header.css" />
+  </head>
+  <body>
+    <header>
+      <span><a href="../index.html">iReporter</a></span>
+      <span class="bar" id="tooglebar">&#9776</span>
+      <ul class="nav-items show-items " >
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+  </header>
+    <main id="main">
+      <div class="container">
+        <div class="row">
+          <div class="column-50 flex-column">
+            <p class="left-heading"><span>i</span>Reporter</p>
+            <p class="left-heading-sub">
+              Tell Us About it,<br />
+              We can build a better Nation
+            </p>
+          </div>
+          <div class="column-50">
+            <div class="form-container">
+              <h4>Create your account</h4>
+              <form id="formsubmit">
+                <div>
+                <label for="firstname">First Name</label>
+                <input type="text"  id="firstname" name="firstname" placeholder="John"/>
+                <small id="firstname-err"></small>
+                </div>
+
+                <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" placeholder="Doe" id="lastname" value=""/>
+                <small id="lastname-err"></small>
+                </div>
+
+                <div>
+                <label for="othernames">Other Names</label>
+                <input type="text" id="othernames" placeholder="Doe" id="othernames" value=""/>
+                <small id="othernames-err"></small>
+                </div>
+
+                <div>
+                <label for="email">Email</label>
+                <input type="text" placeholder="example@email.com" id="email" value="" />
+                <small id="email-err"></small>
+                </div>
+
+                <div>
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="phonenumber" placeholder="Doe" id="phonenumber" value="" />
+                <small id="phonenumber-err"></small>
+                  </div>
+
+                <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Doe" id="username" value="" />
+                <small id="username-err"></small>
+                </div>
+
+                <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" id="password" value="" />
+                <small id="password-err"></small>
+                </div>
+                
+                <div>
+                <label for="confirmpassword">Confirm Password</label>
+                <input
+                  type="password"
+                  placeholder="confirm password"
+                  id="password2"
+                />
+                <small id="password2-err"></small>
+                </div>
+
+                <button type="submit" class="btn btn-dark">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>copyright &copy; 2018. All rights reserved.</footer>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/register.js"></script>
+  </body>
+</html>
